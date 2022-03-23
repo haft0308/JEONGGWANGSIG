@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class equals {
 
@@ -32,6 +33,20 @@ public class equals {
 		{
 			System.out.println("검색값이 없다.");
 		}
+		
+		// 
+		Scanner sc = new Scanner(System.in);
+		int maxnum = 0;
+		int[] num = new int[10];
+		for (i=0; i < 10; i++)
+		{
+			System.out.println("숫자 10개를 입력하데요:");
+			num[i] = sc.nextInt();
+			if (num[i]> maxnum) { maxnum = num[i]; } 
+		}
+		//int maxnum = max(num);
+		System.out.println("큰 수: "+maxnum);
+		
 	}
 
 }
