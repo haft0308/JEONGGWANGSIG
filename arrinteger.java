@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class arrinteger {
 
@@ -30,6 +31,24 @@ public class arrinteger {
 			System.out.print(ch[i]+" ");
 		}
 		System.out.println();
+		
+		// 사용자에게서 5개의 숫자를 입력받아서 배열에 담아 출력하시요
+		Scanner sc = new Scanner(System.in);
+		int[] num = new int[5];
+
+		for (i=0; i<5; i++)
+		{
+			System.out.println("숫자 5개를 연이어 입력하세요: ");
+			num[i] = sc.nextInt();
+			
+		}
+		for (i =0; i<5; i++)
+		{
+			System.out.print("숫자 5개의 출력: ");
+			System.out.println(num[i]+" ");
+		}
+		System.out.println();
+		
 	}
 
 }
