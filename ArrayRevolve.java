@@ -1,38 +1,18 @@
 
-public class baro {
+public class ArrayRevolve {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		System.out.println("11. 배열 answer에 담긴 데이터를 읽고 숫자의 개수를 세어서 개수만큼 '*'를 찍어내는 프로그램");
-		int[][] answer = {
-				{5, 5, 5, 5, 5},
-				{10, 10, 10},
-				{20, 20, 20, 20},
-				{30, 30}
-		};
-		
-		for (int i =0; i<answer.length; i++)
-		{
-			for (int j =0; j<answer[i].length; j++)
-			{
-				System.out.print("*");				
-			}
-		System.out.println();
-		}
-		System.out.println();
-		
-
 		System.out.println("12. 주어진 배열을 시계방향으로 90도 회전시켜서 출력하는 프로그램.");
 		System.out.println("12. 원래의 배열.");
 		// 배열을 90도 회전하기 위한 함수 제작
 		// fNum = 원 배열의 행 크기, sNum = 원 배열의 열 크기
 		
 		char[][] star = {
-				{'*', ' ', ' ', ' ', '0'},
-				{'*', '*', ' ', ' ', '0'},
-				{'*', '*', '*', ' ', '0'},
-				{'*', '*', '*', '*', '0'}
+				{'*', '*', ' ', ' ', ' '},
+				{'*', '*', ' ', ' ', ' '},
+				{'*', '*', '*', '*', '*'},
+				{'*', '*', '*', '*', '*'}
 		};
 		
 		int fNum = star.length;
